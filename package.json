@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "response-time": "^2.3.4"
+  },
+  "type": "module",
+  "name": "stage1",
+  "version": "1.0.0",
+  "description": "A simple express app to test cloud deployment.",
+  "main": "app.ts",
+  "devDependencies": {
+    "@types/response-time": "^2.3.9"
+  },
+  "scripts": {
+    "start": "bun src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ifeanyi",
+  "license": "ISC"
+}

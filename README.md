@@ -1,28 +1,28 @@
-## HNG12 DevOps Stage 1 - Personal API
+# HNG12 DevOps Stage 1 - Personal API
 
 A minimal Node.js (Express) API built with TypeScript and Bun, deployed on an AWS EC2 instance. This project serves as a demonstration of backend service structure, Nginx reverse proxy configuration, and process persistence for DevOps Stage 1.
 
-# 🚀 Live Deployment
+## 🚀 Live Deployment
 The API is publicly accessible at:
 URL: http://13.48.68.182 or https://kellstech.duckdns.org/
 
 
 🛠️ Project Setup & Local Development
 
-# Prerequisites
+### Prerequisites
 - Bun (Recommended) or Node.js
 - Nginx (for reverse proxy)
 - PM2 (for process management)
 
-# Local Installation
+### Local Installation
 
-1. # Clone the repository:
+1. #### Clone the repository:
 ```
 git clone https://github.com/KellsCodes/HNG14Stage1.git
 cd HNG14Stage1.git
 ```
 
-2. # Install dependencies:
+2. #### Install dependencies:
 # if no bun installed, install bun using:
 
 ```
@@ -46,32 +46,32 @@ bun install
 
 ```
 
-3. # Run the application:
+3. #### Run the application:
 ```
 bun start
 ```
 The server will start on http://localhost:5001.
 
-# 📡 API Endpoints
+### 📡 API Endpoints
 All endpoints return Content-Type: application/json with an HTTP 200 OK status and a response time of < 500ms.
 
-# 1. Root Endpoint
-# GET /
+#### 1. Root Endpoint
+##### GET /
 ```
 {
   "message": "API is running"
 }
 ```
 
-# 2. Health Check
-# GET /health
+#### 2. Health Check
+##### GET /health
 ```
 {
   "message": "healthy"
 }
 ```
-# 3. Personal Details
-# GET /me
+#### 3. Personal Details
+##### GET /me
 ```
 {
   "name": "Ifeanyi Nworji",
@@ -80,9 +80,9 @@ All endpoints return Content-Type: application/json with an HTTP 200 OK status a
 }
 ```
 
-# 🏗️ Deployment Details (DevOps)
+## 🏗️ Deployment Details (DevOps)
 
-# 1. Reverse Proxy Configuration (Nginx)
+### 1. Reverse Proxy Configuration (Nginx)
 The application runs locally on port 5001. Nginx is configured to listen on port 80 and proxy requests to the application:
 
 ```
@@ -126,7 +126,7 @@ server {
     }
 }
 ```
-# 2 Save and Restart:
+### 2 Save and Restart:
 
 ```
 sudo nginx -t
@@ -146,7 +146,7 @@ pm2 startup
 
 ```
 
-# 🗂️ Project Structure
+## 🗂️ Project Structure
 ```
 .
 ├── src/
@@ -158,5 +158,5 @@ pm2 startup
 ```
 
 
-# Author: Ifeanyi Nworji
-# HNG12 DevOps Track
+### Author: Ifeanyi Nworji
+### HNG12 DevOps Track

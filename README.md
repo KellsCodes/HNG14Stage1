@@ -127,8 +127,11 @@ server {
 }
 ```
 # 2 Save and Restart:
+
+```
 sudo nginx -t
 sudo systemctl restart nginx
+```
 
 # 2. Process Persistence
 To ensure the API remains online after SSH sessions end or system reboots, PM2 is used to manage the process:
@@ -144,6 +147,7 @@ pm2 startup
 ```
 
 # 🗂️ Project Structure
+```
 .
 ├── src/
 │   ├── routes/
@@ -151,6 +155,7 @@ pm2 startup
 │   └── app.ts          # Express application setup
 ├── package.json        # Project dependencies and scripts
 └── tsconfig.json       # TypeScript configuration
+```
 
 
 # Author: Ifeanyi Nworji

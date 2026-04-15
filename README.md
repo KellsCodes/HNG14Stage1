@@ -149,12 +149,16 @@ pm2 startup
 ## 🗂️ Project Structure
 ```
 .
-├── src/
-│   ├── routes/
-│   │   └── main.ts     # Route handlers for /, /health, and /me
-│   └── app.ts          # Express application setup
-├── package.json        # Project dependencies and scripts
-└── tsconfig.json       # TypeScript configuration
+├── README.md                # Project documentation
+├── bun.lock
+├── package.json             # Project dependencies and scripts
+└── src
+    ├── app.ts               # Express application setup
+    └── routes
+        └── routes.ts        # Route handlers for /, /health, and /me
+
+3 directories, 5 files
+
 ```
 
 
